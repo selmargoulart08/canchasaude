@@ -2,12 +2,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(26, 26, 26, 0.9); /* Fundo transparente */
-    color: #fff;
+    background-color: rgba(173, 157, 157, 0.9); /* Fundo transparente */
+    color: #181616;
   }
   
   header {
-    background-color: #333;
+    background-color: #4b2c2c;
     padding: 20px;
     text-align: center;
   }
@@ -32,7 +32,7 @@ body {
   
   nav a {
     text-decoration: none;
-    color: #fff;
+    color: #4e4c4c;
     font-size: 1.2rem;
     text-transform: uppercase; /* Deixa o texto em maiúsculo */
     letter-spacing: 1px; /* Espaçamento entre letras */
@@ -53,7 +53,7 @@ body {
   }
   
   footer {
-    background-color: #333;
+    background-color: #6b6868;
     padding: 10px;
     text-align: center;
   }
@@ -69,4 +69,5 @@ body {
       margin-top: 20px;
     }
   }
+  
   
