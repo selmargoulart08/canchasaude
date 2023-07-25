@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(26, 26, 26, 0.9); /* Fundo transparente */
+    color: #fff;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase; /* Deixa o texto em maiúsculo */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase; /* Deixa o texto em maiúsculo */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    border-bottom: 2px solid transparent; /* Linha de baixo no link */
+    transition: border-bottom 0.3s ease; /* Transição suave */
+  }
+  
+  nav a:hover {
+    border-bottom: 2px solid #fff; /* Linha de baixo no link ao passar o mouse */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav {
+      margin-top: 20px;
+    }
+  }
+  
