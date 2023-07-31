@@ -1,119 +1,161 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-  <title>Cancha Saude</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    
-    <h1 class="titulo">Cancha Saúde <br> A cancha da família</h1>
-    <nav class="nav">
-      <div class="links">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#cancha">Cancha</a></li>
-        <li><a href="#salgados">Salgados</a></li>
-        <li><a href="#contato">Contatos</a></li>
-      </div>
-    </nav>
-  </header>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive;
+   
+}
+.container {
+  position: relative;
+  padding: 15px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.nav {
+  display: inline-block;
+}
+li {
+  display: inline;
+}
+.titulo {
+  text-align: center;
+  text-shadow: 5px 5px 5px brown;
 
-  <main>
-      <section class="inicio" id="inicio">
-        <h2>Bem-vindo à nossa Cancha Saúde</h2>
-        </section>
-  <div class="div">
-    <section class="hidden">
-      <section class="bemvindo" id="cancha">
-        
-        <p>Seja bem-vindo à nossa  Cancha de Futsal!</p>
-        <p>Aqui você encontra um espaço familiar, para praticar seus esportes favoritos, futsal, futvolley, volleyball, fazer um churras e se divertir em familia.</p>
-      </section>
-      <section class="hidden">
-      <div class="container">
-        <button class="arrow-left control" aria-label="Previous image">◀</button>
-        <button class="arrow-right control" aria-label="Next Image">▶</button>
-        <div class="gallery-wrapper">
-          <div class="gallery">
-            <img src="banheiro.jpg" alt="banheiro" class="item current-item">
-            <img src="corredor.jpg" alt="corredor" class="item current-item">
-            <img src="fundo.jpg" alt="Fundo" class="item current-item">
-            <img src="latquadra.jpg" alt="lateral da quadra" class="item current-item">
-            <img src="mesas.jpg" alt="mesas" class="item current-item">
-            <img src="quadradecima.jpg" alt="quadradecima" class="item current-item">
-            <img src="quadradecimas.jpg" alt="quadradecimas" class="item current-item">
-            <img src="quadradelado.jpg" alt="quadradelado" class="item current-item">
-            <img src="superior.jpg" alt="superior" class="item current-item">
-            <img src="vislateral.jpg" alt="vislateral" class="item current-item">
-          </div>
-        </div>
-      </div>
-      </section>
-      
-    <Div></Div>
+}
 
-    </section>
-    <section class="hidden">
-    <section class="salgados" id="salgados">
-      <h2>Salgados</h2>
-      <p>Veja a variedade de salgados deliciosos que oferecemos.</p>
 
-    </section>
-    </section>
-    <Section class="hidden">
-    <div class="container">
-      <button class="arrow-left control" aria-label="Previous image">◀</button>
-      <button class="arrow-right control" aria-label="Next Image">▶</button>
-      <div class="gallery-wrapper">
-        <div class="gallery">
-          <img src="cerveja.jpg" alt="cerveja" class="item current-item">
-          <img src="cervejas.jpg" alt="cervejas" class="item current-item">
-          <img src="salgados1.jpg" alt="salgados1" class="item current-item">
-          <img src="churras1.jpg" alt="churras1" class="item current-item">
-          <img src="churras2.jpg" alt="churras2" class="item current-item">
-          <img src="churras3.jpg" alt="churras3" class="item current-item">
-          <img src="churras4.jpg" alt="churras4" class="item current-item">
-          
-        </div>
-      </div>
-    </div>
-    </Section>
-    <section class="hidden">
-    <section class="contato" id="contato">
-      <h2>Contato</h2>
-      <p>Entre em contato conosco para reservas e encomendas.</p>
-      <p>Telefone: (51) 98614-5785</p>      
-      <!-- Mapa incorporado usando a API do Google Maps -->
-      <iframe
-        width="90%"
-        height="200"
-        frameborder="0" style="border:0"
-        src="https://www.google.com/maps/embed/v1/place?q=Avenida Piratini 366, Alvorada,RS &key=AIzaSyDN3ih_kCG8VgpRtFHX9Z_mUSdRS5sh5ls" allowfullscreen>
-      </iframe>
-      <!-- Fim do mapa incorporado -->
-      <!-- Link para o WhatsApp -->
+.div {
+  background-color: rgb(59, 59, 56);
+  border-radius: 10px;
+  text-shadow: 2px 2px 2px black;
+  color: white;
+}
 
-      
-    </section>
-    </section>
-    <a href="https://api.whatsapp.com/send?phone=5551986145785&text=Texto%20aqui"
-    target="_blank"
-    style="position:fixed;bottom:20px;right:30px;">
-   <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
-   </a>
-  </main>
-</div>
-  <h1></h1>
-  <footer>
-    <p>Todos os direitos reservados &copy; SelmarJuniorTech</p>
-  </footer>
+.gallery-wrapper {
+  overflow-x: auto;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  color: #fff;
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+  opacity: 0.1;
+  cursor: pointer;
+  border: none;
+}
 
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.arrow-right {
+  right: 0;
+  left: auto;
+  text-align: right;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.item {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out;
+  opacity: 0.5;
+}
+
+.current-item {
+  opacity: 1;
+}
+
+/* This is from w3schools */
+/* 
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.gallery-wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cyan {
+  background: cyan;
+}
+
+.deeppink {
+  background: deeppink;
+}
+
+.turquoise {
+  background: turquoise;
+}
+
+.darkblue {
+  background: darkblue;
+}
+
+.purple {
+  background: purple;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 3s;
+  transform: translateX(-100%);
+
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 3s;
+  transform: translateX(0);
+}
+/* Estilo para os horários vagos */
+.horario-vago {
+  background-color: #f2f2f2; /* Cor de fundo para horários vagos */
+}
+
+/* Estilos adicionais para melhor visualização */
+.calendario table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.calendario th,
+.calendario td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.calendario th {
+  background-color: #f2f2f2; /* Cor de fundo para cabeçalhos dos dias da semana */
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+  .calendario th,
+  .calendario td {
+    font-size: 12px; /* Reduzir tamanho da fonte para melhor ajuste em dispositivos móveis */
+  }
+}
