@@ -130,3 +130,32 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   transition: all 3s;
   transform: translateX(0);
 }
+/* Estilo para os horários vagos */
+.horario-vago {
+  background-color: #f2f2f2; /* Cor de fundo para horários vagos */
+}
+
+/* Estilos adicionais para melhor visualização */
+.calendario table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.calendario th,
+.calendario td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.calendario th {
+  background-color: #f2f2f2; /* Cor de fundo para cabeçalhos dos dias da semana */
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+  .calendario th,
+  .calendario td {
+    font-size: 12px; /* Reduzir tamanho da fonte para melhor ajuste em dispositivos móveis */
+  }
+}
